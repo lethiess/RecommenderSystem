@@ -15330,7 +15330,7 @@ Your top_20 looks like the solution list! Nice job.
                                    <span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="n">other_users</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
     
     <span class="c1"># sort descending by similarity and create a list with the corresponding ids</span>
-    <span class="n">df_similarity</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;similarity&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="n">ascending</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">df_similarity</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;similarity&quot;</span><span class="p">,</span> <span class="s2">&quot;neighbor_id&quot;</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="n">ascending</span><span class="p">,</span><span class="kc">True</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     
     <span class="k">return</span> <span class="n">df_similarity</span>
 </pre></div>
@@ -15404,8 +15404,8 @@ Your top_20 looks like the solution list! Nice job.
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The 10 most similar users to user 1 are: [3933, 23, 3782, 203, 4459, 3870, 131, 46, 4201, 395]
-The 5 most similar users to user 3933 are: [1, 23, 3782, 4459, 203]
+<pre>The 10 most similar users to user 1 are: [3933, 23, 3782, 203, 4459, 131, 3870, 46, 4201, 49]
+The 5 most similar users to user 3933 are: [1, 23, 3782, 203, 4459]
 The 3 most similar users to user 46 are: [4201, 23, 3782]
 </pre>
 </div>
@@ -15554,16 +15554,16 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#39;analyze open data sets with pandas dataframes&#39;,
- &#39;insights from new york car accident reports&#39;,
+<pre>[&#39;deploy your python model as a restful api&#39;,
+ &#39;gosales transactions for logistic regression model&#39;,
+ &#39;discover hidden facebook usage insights&#39;,
+ &#39;optimizing a marketing campaign: moving from predictions to actions&#39;,
+ &#39;analyze accident reports on amazon emr spark&#39;,
+ &#39;apache spark lab, part 2: querying data&#39;,
+ &#39;deep learning from scratch i: computational graphs&#39;,
  &#39;data visualization playbook: telling the data story&#39;,
- &#39;build a python app on the streaming analytics service&#39;,
- &#39;5 practical use cases of social network analytics: going beyond facebook and twitter&#39;,
- &#39;brunel interactive visualizations in jupyter notebooks&#39;,
- &#39;pixiedust 1.0 is here! – ibm watson data lab&#39;,
- &#39;using deep learning with keras to predict customer churn&#39;,
- &#39;what is smote in an imbalanced class setting (e.g. fraud detection)?&#39;,
- &#39;aspiring data scientists! start to learn statistics with these 6 books!&#39;]</pre>
+ &#39;modeling energy usage in new york city&#39;,
+ &#39;data science platforms are on the rise and ibm is leading the way&#39;]</pre>
 </div>
 
 </div>
@@ -15761,10 +15761,10 @@ The 3 most similar users to user 46 are: [4201, 23, 3782]
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>The top 10 recommendations for user 20 are the following article ids:
-[&#39;1331.0&#39;, &#39;1176.0&#39;, &#39;1410.0&#39;, &#39;1427.0&#39;, &#39;1330.0&#39;, &#39;1357.0&#39;, &#39;681.0&#39;, &#39;164.0&#39;, &#39;1367.0&#39;, &#39;1157.0&#39;]
+[&#39;730.0&#39;, &#39;1150.0&#39;, &#39;939.0&#39;, &#39;1444.0&#39;, &#39;981.0&#39;, &#39;142.0&#39;, &#39;1329.0&#39;, &#39;1304.0&#39;, &#39;1160.0&#39;, &#39;1151.0&#39;]
 
 The top 10 recommendations for user 20 are the following article names:
-[&#39;use xgboost, scikit-learn &amp; ibm watson machine learning apis&#39;, &#39;uci: sms spam collection&#39;, &#39;insights from new york car accident reports&#39;, &#39;airbnb data for analytics: washington d.c. listings&#39;, &#39;intentional homicide, number and rate per 100,000 population, by country&#39;, &#39;learn tensorflow and deep learning together and now!&#39;, &#39;programmatic evaluation using watson conversation&#39;, &#39;build a python app on the streaming analytics service&#39;, &#39;real-time sentiment analysis of twitter hashtags with spark (+ pixiedust)&#39;, &#39;overlapping co-cluster recommendation algorithm (ocular)&#39;]
+[&#39;gosales transactions for logistic regression model&#39;, &#39;developing for the ibm streaming analytics service&#39;, &#39;analyze accident reports on amazon emr spark&#39;, &#39;deep learning from scratch i: computational graphs&#39;, &#39;neural networks for beginners: popular types and applications&#39;, &#39;super fast string matching in python&#39;, &#39;airbnb data for analytics: venice listings&#39;, &#39;airbnb data for analytics: venice calendar&#39;, &#39;worldwide fuel oil consumption by household (in 1000 metric tons)&#39;, &#39;ingest data from message hub in a streams flow&#39;]
 </pre>
 </div>
 </div>
@@ -15786,8 +15786,8 @@ The top 10 recommendations for user 20 are the following article names:
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Tests with a dictionary of results</span>
-<span class="n">user1_most_sim</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">neighbor_id</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Find the user that is most similar to user 1 </span>
-<span class="n">user131_10th_sim</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span><span class="o">.</span><span class="n">neighbor_id</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="c1"># Find the 10th most similar user to user 131</span>
+<span class="n">user1_most_sim</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">neighbor_id</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Find the user that is most similar to user 1 </span>
+<span class="n">user131_10th_sim</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="mi">131</span><span class="p">)</span><span class="o">.</span><span class="n">neighbor_id</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">11</span><span class="p">)[</span><span class="mi">9</span><span class="p">]</span> <span class="c1"># Find the 10th most similar user to user 131</span>
 </pre></div>
 
      </div>
