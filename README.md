@@ -11,7 +11,7 @@ The recommendation engine includes following techniques:
 
 ### Installation 
 
-To run this the Jupyter Notebook a installation of Anaconda is recommendet.
+To run this the Jupyter Notebook a installation of Anaconda is recommended.
 
 [Install Anaconda](https://www.anaconda.com/products/individual#Downloads)
 
